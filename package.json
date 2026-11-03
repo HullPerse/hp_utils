@@ -1,0 +1,152 @@
+{
+  "name": "@hullperse/hp_utils",
+  "version": "0.1.1",
+  "description": "Reusable TypeScript/React utilities extracted from iluhaAnime and DPG",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./shared": {
+      "types": "./dist/shared/shared.d.ts",
+      "default": "./dist/shared/shared.js"
+    },
+    "./attempt": {
+      "types": "./dist/attempt/attempt.d.ts",
+      "default": "./dist/attempt/attempt.js"
+    },
+    "./result": {
+      "types": "./dist/result/result.d.ts",
+      "default": "./dist/result/result.js"
+    },
+    "./lruCache": {
+      "types": "./dist/lruCache/lruCache.d.ts",
+      "default": "./dist/lruCache/lruCache.js"
+    },
+    "./interval": {
+      "types": "./dist/interval/interval.d.ts",
+      "default": "./dist/interval/interval.js"
+    },
+    "./array": {
+      "types": "./dist/array/array.d.ts",
+      "default": "./dist/array/array.js"
+    },
+    "./math": {
+      "types": "./dist/math/math.d.ts",
+      "default": "./dist/math/math.js"
+    },
+    "./bytes": {
+      "types": "./dist/bytes/bytes.d.ts",
+      "default": "./dist/bytes/bytes.js"
+    },
+    "./type": {
+      "types": "./dist/type/type.d.ts",
+      "default": "./dist/type/type.js"
+    },
+    "./text": {
+      "types": "./dist/text/text.d.ts",
+      "default": "./dist/text/text.js"
+    },
+    "./fatalClassify": {
+      "types": "./dist/fatalClassify/fatalClassify.d.ts",
+      "default": "./dist/fatalClassify/fatalClassify.js"
+    },
+    "./debounce": {
+      "types": "./dist/debounce/debounce.d.ts",
+      "default": "./dist/debounce/debounce.js"
+    },
+    "./throttle": {
+      "types": "./dist/throttle/throttle.d.ts",
+      "default": "./dist/throttle/throttle.js"
+    },
+    "./signal": {
+      "types": "./dist/signal/signal.d.ts",
+      "default": "./dist/signal/signal.js"
+    },
+    "./tweenedValue": {
+      "types": "./dist/tweenedValue/tweenedValue.d.ts",
+      "default": "./dist/tweenedValue/tweenedValue.js"
+    },
+    "./resize": {
+      "types": "./dist/resize/resize.d.ts",
+      "default": "./dist/resize/resize.js"
+    },
+    "./cursor": {
+      "types": "./dist/cursor/cursor.d.ts",
+      "default": "./dist/cursor/cursor.js"
+    },
+    "./media/tokenize": {
+      "types": "./dist/media/tokenize.d.ts",
+      "default": "./dist/media/tokenize.js"
+    },
+    "./media/mediaClassify": {
+      "types": "./dist/media/mediaClassify.d.ts",
+      "default": "./dist/media/mediaClassify.js"
+    },
+    "./media/mediaResolve": {
+      "types": "./dist/media/mediaResolve.d.ts",
+      "default": "./dist/media/mediaResolve.js"
+    },
+    "./media/episode": {
+      "types": "./dist/media/episode.d.ts",
+      "default": "./dist/media/episode.js"
+    },
+    "./media/video": {
+      "types": "./dist/media/video.d.ts",
+      "default": "./dist/media/video.js"
+    },
+    "./media/videoTitle": {
+      "types": "./dist/media/videoTitle.d.ts",
+      "default": "./dist/media/videoTitle.js"
+    },
+    "./media/videoParts": {
+      "types": "./dist/media/videoParts.d.ts",
+      "default": "./dist/media/videoParts.js"
+    },
+    "./media/parse": {
+      "types": "./dist/media/parse.d.ts",
+      "default": "./dist/media/parse.js"
+    },
+    "./sidecar": {
+      "types": "./dist/sidecar/sidecar.d.ts",
+      "default": "./dist/sidecar/sidecar.js"
+    },
+    "./segments": {
+      "types": "./dist/segments/segments.d.ts",
+      "default": "./dist/segments/segments.js"
+    },
+    "./tokens": {
+      "types": "./dist/config/graphics/tokens.config.d.ts",
+      "default": "./dist/config/graphics/tokens.config.js"
+    },
+    "./highlight": { "types": "./dist/highlight/highlight.d.ts", "default": "./dist/highlight/highlight.js" },
+    "./symspell": { "types": "./dist/symspell/symspell.d.ts", "default": "./dist/symspell/symspell.js" },
+    "./searchKeyboard": { "types": "./dist/searchKeyboard/searchKeyboard.d.ts", "default": "./dist/searchKeyboard/searchKeyboard.js" },
+    "./roman": { "types": "./dist/roman/roman.d.ts", "default": "./dist/roman/roman.js" },
+    "./normalize": { "types": "./dist/normalize/normalize.d.ts", "default": "./dist/normalize/normalize.js" }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "jsdom": "26.1.0",
+    "react": "19.3.1",
+    "typescript": "^5.6.0",
+    "vitest": "3.2.7"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  }
+}
