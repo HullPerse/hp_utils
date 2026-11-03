@@ -1,6 +1,6 @@
 {
   "name": "@hullperse/hp_utils",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Reusable TypeScript/React utilities extracted from iluhaAnime and DPG",
   "type": "module",
   "sideEffects": false,
